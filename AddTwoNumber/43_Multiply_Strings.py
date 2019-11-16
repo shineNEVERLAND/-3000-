@@ -1,15 +1,15 @@
 # coding: utf-8
 
 """
-    8 9  <- num2
-    7 6  <- num1
+    8 9  <- num1
+    7 6  <- num2
 -------
-    5 4
-  4 8
-  6 3
-5 6
--------
-6 7 6 4
+    5 4  | i = 0, j = 0, num1[i] = 9, num2[j] = 6
+  4 8    | i = 1, j = 0, num1[i] = 8, num2[j] = 6
+  6 3    | i = 0, j = 1, num1[i] = 9, num2[j] = 7
+5 6      | i = 1, j = 1, num1[i] = 8, num2[j] = 7
+-------  |
+6 7 6 4  |
 
 num1 中位置为i的数字乘以 num2 中位置为j的数字，那么得到的两位数字的位置为 i+j 和 i+j+1
 """
@@ -31,4 +31,4 @@ class Solution(object):
                 res[i + j + 1] = (res[i + j + 1] + tmp) % 10  # 当前位数
             res[i] += carry
         s = ''.join(map(str, res))
-        return "0" if not s.lstrip("0") else s.lstrip("0")
+        return "0" if not s.lstrip("0") else s.rstrip("0")
