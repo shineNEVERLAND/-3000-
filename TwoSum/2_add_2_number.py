@@ -1,31 +1,25 @@
 # coding: utf-8
 
 
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-
 class Solution(object):
-    def addTwoNumbers(self, l1, l2):
+    def twoSum(self, nums, target):
         """
-        :type l1: ListNode
-        :type l2: ListNode
-        :rtype: ListNode
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
         """
-        r = head = ListNode(0)  # 头指针初始化为0，为了方便Python表示链表结构(其实主要是这个垃圾数据结构的构造函数需要初始值。垃圾)
-        middle = 0
-        while l1 or l2 or middle:  # or middle这个case：[5]、[5]这个case的输出是: [0, 1]
-            if l1:
-                middle += l1.val
-                l1 = l1.next
-            if l2:
-                middle += l2.val
-                l2 = l2.next
-            tmp = ListNode(middle % 10)
-            r.next = tmp
-            r = r.next
-            middle /= 10
-        return head.next
+        goal = dict()
+        for i in xrange(0, len(nums), 1):
+            aim = target - nums[i]
+            value = goal.get(aim, None)
+            if value is None:
+                goal[nums[i]] = i
+            else:
+                return [i, value]
+
+
+if __name__ == '__main__':
+    s = [2,7,11,15]
+    target = 9
+    res = Solution().twoSum(s, target)
+    print res
