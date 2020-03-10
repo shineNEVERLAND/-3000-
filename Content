@@ -1,2 +1,9 @@
-# 回文
-# 题号 | 简述 | 链接
+回文
+5：最长的回文子串：需要求一个子串
+https://leetcode-cn.com/problems/longest-palindromic-substring/
+
+409：最长回文串：在给定的字母中，拼凑成一个最长的回文串
+https://leetcode-cn.com/problems/longest-palindrome/
+
+516：最长回文子序列：需要求一个子序列
+https://leetcode-cn.com/problems/longest-palindromic-subsequence/
