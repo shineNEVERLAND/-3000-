@@ -18,3 +18,24 @@ https://leetcode-cn.com/problems/valid-palindrome/submissions/
 
 680. 验证回文字符串II：【头尾指针/递归】删掉一个字符是否满足回文串。当s[i]!=s[j]时，判断s[i+1][j]和s[i][j-1]
 https://leetcode-cn.com/problems/valid-palindrome-ii/
+
+==================================================
+
+【粉刷房子】
+  256：粉刷房子：【dp】
+  https://leetcode-cn.com/problems/paint-house/
+  265：粉刷房子II：【dp】
+  https://leetcode-cn.com/problems/paint-house-ii/
+【打家劫舍】
+  198. 打家劫舍：【dp】
+  https://leetcode-cn.com/problems/house-robber/
+  213. 打家劫舍II：【dp】
+  https://leetcode-cn.com/problems/house-robber-ii/
+【栅栏涂色】：
+  276：栅栏涂色：【dp】
+  https://leetcode-cn.com/problems/paint-fence/
+【滑动窗口】：【TODO】
+
+  
+  
+  
