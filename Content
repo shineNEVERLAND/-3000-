@@ -1,17 +1,20 @@
 回文
-5：最长的回文子串：需要求一个子串。思路同[516, 647]
+5：最长的回文子串：【dp】需要求一个子串。思路同[516, 647]
 https://leetcode-cn.com/problems/longest-palindromic-substring/
 
-516：最长回文子序列：需要求一个子序列。思路同[5, 647]
+516：最长回文子序列：【dp】需要求一个子序列。思路同[5, 647]
 https://leetcode-cn.com/problems/longest-palindromic-subsequence/
 
-647：回文子串：求给出的字符串，能搞出来多少个回文子串。思路同[5, 516]
+647：回文子串：【dp】求给出的字符串，能搞出来多少个回文子串。思路同[5, 516]
 https://leetcode-cn.com/problems/palindromic-substrings/
 
 =================================================================
 
-409：最长回文串：在给定的字母中，拼凑成一个最长的回文串
+409：最长回文串：【哈希】在给定的字母中，拼凑成一个最长的回文串。
 https://leetcode-cn.com/problems/longest-palindrome/
 
-125：验证回文串：判断一个字符串是否是回文。这个蛋疼的是包含标点符号，而且这个用不到动态规划的思路。
+125：验证回文串：【头尾指针/while】判断一个字符串是否是回文。这个蛋疼的是包含标点符号，而且这个用不到动态规划的思路。
 https://leetcode-cn.com/problems/valid-palindrome/submissions/
+
+680. 验证回文字符串II：【头尾指针/递归】删掉一个字符是否满足回文串。当s[i]!=s[j]时，判断s[i+1][j]和s[i][j-1]
+https://leetcode-cn.com/problems/valid-palindrome-ii/
