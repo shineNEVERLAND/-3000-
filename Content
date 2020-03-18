@@ -38,6 +38,20 @@ https://leetcode-cn.com/problems/valid-palindrome-ii/
   https://leetcode-cn.com/problems/paint-fence/
 【滑动窗口】：【TODO】
 
+=================================================
+
+【编辑距离】
+  72.编辑距离：【dp】，这个看labuladong的fucking_althorithm
+  https://leetcode-cn.com/problems/edit-distance
+【爬楼梯】
+  70.爬楼梯：【dp】，就是斐波那契数列，
+  https://leetcode-cn.com/problems/climbing-stairs/
+【解码方法】
+  91. 解码方法：【dp】，这个是特殊的的爬楼梯（边界问题太特殊了。。）
+  https://leetcode-cn.com/problems/decode-ways/
+ 
+
+
   
   
   
