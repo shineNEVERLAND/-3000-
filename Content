@@ -49,8 +49,18 @@ https://leetcode-cn.com/problems/valid-palindrome-ii/
 【解码方法】
   91. 解码方法：【dp】，这个是特殊的的爬楼梯（边界问题太特殊了。。）
   https://leetcode-cn.com/problems/decode-ways/
+  
+===========================================================
  
-
+【回文串问题】
+ 266.回文排列：求打乱的字符串顺序后，能否构成回文串
+ https://leetcode-cn.com/problems/palindrome-permutation/
+ 409.最长回文串：打乱顺序后，能够构成的回文串的长度
+ https://leetcode-cn.com/problems/longest-palindrome/
+ 这两个题的思路是：用哈希给出字符出现的次数，
+    如果是偶数次数，直接count += hash[s[i]]；
+    如果是奇数次数，直接count += hash[s[i]] - 1，顺便标记下flag = true；
+    count = flag == true ? count + 1: count;
 
   
   
