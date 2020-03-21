@@ -61,6 +61,18 @@ https://leetcode-cn.com/problems/valid-palindrome-ii/
     如果是偶数次数，直接count += hash[s[i]]；
     如果是奇数次数，直接count += hash[s[i]] - 1，顺便标记下flag = true；
     count = flag == true ? count + 1: count;
+    
+==============================================================
+
+252.会议室：这个题很鸡贼，可以利用map自动对key排序的原理，直接往map里面添加，添加的就是按时间排好序的会议开始、结束时间的节点。
+当然还可以用vector的c++11 lambda表达式 sort(v.begin(), v.end(), [&](vector<int>&A, vector<int>&B){return A[0] < B[0]});
+按开始时间排序。
+https://leetcode-cn.com/problems/meeting-rooms/
+
+==============================================================
+
+136.只出现一次的数字：https://leetcode-cn.com/problems/single-number/:异或。a^a = 0; a^b = 1
+389.找不同：https://leetcode-cn.com/problems/find-the-difference/:异或。a^a = 0; a^b = 1
 
   
   
