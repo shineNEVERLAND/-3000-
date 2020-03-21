@@ -74,6 +74,14 @@ https://leetcode-cn.com/problems/meeting-rooms/
 136.只出现一次的数字：https://leetcode-cn.com/problems/single-number/:异或。a^a = 0; a^b = 1
 389.找不同：https://leetcode-cn.com/problems/find-the-difference/:异或。a^a = 0; a^b = 1
 
+==============================================================
+
+349.两个数组的交集：https://leetcode-cn.com/problems/intersection-of-two-arrays/：不允许重复，可用一个hash表
+350.两个数组的交集2：https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/：可以每个字符串一个指针
+383.赎金信：https://leetcode-cn.com/problems/ransom-note/
+  类似上面两个题，也是两个字符串求互相包含的问题。可以退化为字母表的方式：int letters[26]={0};如果没出现过的字符，count<0
+387.字符串中的第一个唯一字符：https://leetcode-cn.com/problems/first-unique-character-in-a-string/。同383方法
+
   
   
   
